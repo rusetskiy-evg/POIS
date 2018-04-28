@@ -65,7 +65,7 @@ int main() {
 	while (p != fractions.end()) {
 		p = find_if(p, fractions.end(), [](fraction obj) { return (obj.getN() == 5); });/*критерий посика задается через лямбда-выражение*/
 		if (p != fractions.end()) {
-			cout << "Element found: " << *p << '\n';
+			cout << endl << "Element found: " << *p << '\n';
 			p++;
 		}
 	}
